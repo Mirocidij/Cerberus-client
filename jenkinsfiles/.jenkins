@@ -13,18 +13,12 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/Mirocidij/Cerberus-client.git'
-                sh 'npm install -s'
+                sh 'yarnpkg install'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
-            }
-        }
-        stage('Deliver') {
-            steps {
-                sh 'npm run build'
-                sh 'npm start'
+                sh 'yarnpkg test'
             }
         }
     }
