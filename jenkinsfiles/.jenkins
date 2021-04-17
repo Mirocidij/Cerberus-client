@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/Mirocidij/Cerberus-client.git'
-                sh 'npm install'
+                sh 'npm install -s'
             }
         }
         stage('Test') {
