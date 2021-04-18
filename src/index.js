@@ -4,7 +4,7 @@ import './index.css';
 import store from './Common/System/configStore';
 import moment from "moment";
 import { Provider } from "react-redux";
-import App from "./Features/Home/App";
+import App from "./Features/Application/App";
 
 moment.locale('ru');
 

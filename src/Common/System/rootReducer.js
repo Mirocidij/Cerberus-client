@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { reducer as formReducer } from 'redux-form'
-import { reducer as homeReducer } from '../../Features/Home/redux/reducer';
+import { reducer as homeReducer } from '../../Features/Application/redux/reducer';
 
 const reducerMap = {
     form: formReducer,
